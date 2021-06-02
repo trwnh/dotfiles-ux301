@@ -41,10 +41,10 @@ client.focused_inactive #00000000 #00000000 #ffffff00 #0099ff00 #00000000
 output eDP-1 scale 1
 
 set $mod Mod4
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 #bindsym $mod+Space exec dmenu_path | dmenu | xargs swaymsg exec
-#bindsym $mod+Space exec --no-startup-id 'rofi -show drun  -theme "Arc-Dark" -font "Roboto 24"'
-bindsym $mod+Space exec --no-startup-id 'wofi'
+bindsym $mod+Space exec --no-startup-id 'rofi -show drun  -theme "Arc-Dark" -font "Roboto 24"'
+#bindsym $mod+Space exec --no-startup-id 'wofi'
 bindsym $mod+f fullscreen
 bindsym $mod+q kill
 bindsym $mod+F5 reload
