@@ -26,9 +26,9 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-set $ssdir /home/trwnh/Pictures/Screenshots
-bindsym print exec grim $ssdir/$(date +'%Y%m%d-%H%M%S.png')
-bindsym Shift+print exec grim -g "$(slurp)" $ssdir/$(date +'%Y%m%d-%H%M%S.png')
+#set $ssdir /home/trwnh/Pictures/Screenshots
+#bindsym print exec grim $ssdir/$(date +'%Y%m%d-%H%M%S.png')
+#bindsym Shift+print exec grim -g "$(slurp)" $ssdir/$(date +'%Y%m%d-%H%M%S.png')
 
 #gaps outer 1px
 #gaps inner 4px
@@ -50,6 +50,13 @@ bindsym $mod+q kill
 bindsym $mod+F5 reload
 bindsym $mod+Shift+F5 restart
 bindsym $mod+Escape exec swaymsg exit
+
+bindsym Print            exec ~/.config/sway/swayshot
+bindsym Ctrl+Print       exec ~/.config/sway/swayshot window
+bindsym Shift+Print      exec ~/.config/sway/swayshot region
+bindsym Mod4+Print       exec ~/.config/sway/swayshot display upload
+bindsym Mod4+Ctrl+Print  exec ~/.config/sway/swayshot window  upload
+bindsym Mod4+Shift+Print exec ~/.config/sway/swayshot region  upload
 
 # Move focus
   bindsym $mod+Left focus left
