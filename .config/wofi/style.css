@@ -1,0 +1,18 @@
+@import url("theme.css")
+
+#input {
+border: none;
+border-radius: 0px;
+font-size: 2em;
+}
+#text {
+margin-left: 1em;
+}
+window {
+
+	border: 2px solid @accent_color;
+
+
+color: @text_color;
+border-radius: 5px;
+}
